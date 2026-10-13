@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:text="Thực hành 03"
+        android:textColor="#111111"
+        android:textSize="16sp" />
+
+    <!-- Số thứ nhất -->
+    <EditText
+        android:id="@+id/edtA"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edit_border"
+        android:hint="Nhập số thứ nhất"
+        android:inputType="numberDecimal|numberSigned"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#DB4437"
+            app:cornerRadius="8dp"
+            app:strokeColor="#000000" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSub"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#E0A93B"
+            app:cornerRadius="8dp"
+            app:strokeColor="#000000" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMul"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:text="*"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#5B3FE0"
+            app:cornerRadius="8dp"
+            app:strokeColor="#000000" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDiv"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            android:text="/"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#1C1C1C"
+            app:cornerRadius="8dp"
+            app:strokeColor="#FF9800" />
+    </LinearLayout>
+
+    <!-- Số thứ hai -->
+    <EditText
+        android:id="@+id/edtB"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edit_border"
+        android:hint="Nhập số thứ hai"
+        android:inputType="numberDecimal|numberSigned"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="4dp"
+        android:text="Kết quả: "
+        android:textColor="#111111"
+        android:textSize="14sp" />
+
+</LinearLayout>
